@@ -213,9 +213,9 @@ export default function LandingPage() {
                         <p className="mt-3 text-sm text-gray-300 sm:mt-4">
                           By providing your email, you agree to
                           {' '}
-                          <a href="#" className="font-medium text-white">
+                          <span href="#" className="font-medium text-white">
                             join our waiting notification
-                          </a>
+                          </span>
                           .
                         </p>
                       </form>
@@ -348,14 +348,14 @@ export default function LandingPage() {
                     <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                       <div className="flex-1">
                         <p className="text-sm font-medium text-orange-500">
-                          <a href={post.category.href} className="hover:underline">
+                          <span className="">
                             {post.category.name}
-                          </a>
+                          </span>
                         </p>
-                        <a href={post.href} className="block mt-2">
+                        <span href={post.href} className="block mt-2">
                           <p className="text-xl font-semibold text-gray-900">{post.title}</p>
                           <p className="mt-3 text-base text-gray-500">{post.preview}</p>
-                        </a>
+                        </span>
                       </div>
                     </div>
                   </div>
