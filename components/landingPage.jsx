@@ -243,7 +243,7 @@ export default function LandingPage() {
                 Everything you need to quickly find a healthy meal
               </p>
               <p className="mt-5 max-w-prose mx-auto text-xl text-gray-500">
-                Stop waisting time scrolling through menu item after menu item to find something that aligns with
+                Stop wasting time scrolling through menu item after menu item to find something that aligns with
                 your dietary or healthy nutrition-based diets.
               </p>
               <div className="mt-12">
