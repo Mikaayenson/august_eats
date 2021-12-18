@@ -142,7 +142,7 @@ export default function LandingPage() {
                   href="#"
                   className="inline-flex items-center px-4 py-2 border-solid border-2 border-orange-500 text-base font-medium rounded-md text-gray-300 bg-gray-900 hover:bg-gray-300 hover:text-gray-900"
                 >
-                  Sign Up
+                  Coming Soon
                 </a>
               </div>
             </nav>
