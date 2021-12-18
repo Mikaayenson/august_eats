@@ -4,6 +4,7 @@ import logo from '../public/logo.png'
 import food_details from "../public/food_details.png"
 import home_screen from "../public/home_screen.png"
 import fav_food from "../public/fav_food.png"
+import WaitingList from "./waitingList"
 import logo_and_icon from '../public/logo_and_icons.png'
 import { Popover, Transition } from '@headlessui/react'
 import {
@@ -87,6 +88,7 @@ const howTo = [
       'Speed to your order with your allergens and nutrition in mind.',
   },
 ]
+
 
 export default function LandingPage() {
   return (
@@ -183,14 +185,6 @@ export default function LandingPage() {
                       </a>
                     ))}
                   </div>
-                  <div className="mt-6 px-5">
-                    <a
-                      href="#"
-                      className="block text-center w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-orange-500 to-orange-500 text-white font-medium hover:from-orange-500 hover:to-orange-900"
-                    >
-                      Join Waiting List
-                    </a>
-                  </div>
                 </div>
               </div>
             </Popover.Panel>
@@ -215,27 +209,7 @@ export default function LandingPage() {
                     </p>
                     <div className="mt-10 sm:mt-12">
                       <form action="#" className="sm:max-w-xl sm:mx-auto lg:mx-0">
-                        <div className="sm:flex">
-                          <div className="min-w-0 flex-1">
-                            <label htmlFor="email" className="sr-only">
-                              Email address
-                            </label>
-                            <input
-                              id="email"
-                              type="email"
-                              placeholder="Enter your email"
-                              className="block w-full px-4 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 focus:ring-offset-gray-900"
-                            />
-                          </div>
-                          <div className="mt-3 sm:mt-0 sm:ml-3">
-                            <button
-                              type="submit"
-                              className="block w-full py-3 px-4 rounded-md shadow bg-orange-500 text-white font-medium hover:from-orange-500 hover:to-orange-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 focus:ring-offset-gray-900"
-                            >
-                              Join Waiting List
-                            </button>
-                          </div>
-                        </div>
+                        <WaitingList/>
                         <p className="mt-3 text-sm text-gray-300 sm:mt-4">
                           By providing your email, you agree to
                           {' '}
