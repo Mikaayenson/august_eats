@@ -69,7 +69,7 @@ const howTo = [
     id: 2,
     title: '2. Filter by Nutrition',
     href: '#',
-    category: { name: 'Consider Dietary Restrictions', href: '#' },
+    category: { name: 'Consider Dietary Choices', href: '#' },
     imageUrl:
       'https://images.unsplash.com/photo-1555243896-c709bfa0b564?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80',
     preview:
