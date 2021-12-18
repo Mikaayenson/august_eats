@@ -1,9 +1,7 @@
 import { Fragment } from 'react'
 import Image from 'next/image'
 import logo from '../public/logo.png'
-import food_details from "../public/food_details.png"
-import home_screen from "../public/home_screen.png"
-import fav_food from "../public/fav_food.png"
+import food_features from "../public/features.png"
 import WaitingList from "./waitingList"
 import logo_and_icon from '../public/logo_and_icons.png'
 import { Popover, Transition } from '@headlessui/react'
@@ -271,61 +269,48 @@ export default function LandingPage() {
           </div>
 
           {/* Testimonial section */}
-          <div className="pb-16 bg-gradient-to-r from-gray-900 to-gray-900 lg:pb-0 lg:z-10 lg:relative">
-            <div className="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-8">
-              <div className="relative lg:-my-8">
-                <div aria-hidden="true" className="absolute inset-x-0 top-0 h-1/2 bg-white lg:hidden" />
-                <div className="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:p-0 lg:h-full">
-                  <div className="aspect-w-10 aspect-h-6 rounded-xl shadow-xl overflow-hidden sm:aspect-w-16 sm:aspect-h-7 lg:h-full">
-                    <div className="h-screen overflow-scroll">
-                        <div className="snap-start">
-                          <Image
-                            src={food_details}
-                            alt="Food Details"
-                          />
-                        </div>
-                        <div className="snap-start">
-                          <Image
-                            src={home_screen}
-                            alt="Home Screen"
-                          />
-                        </div>
-                        <div className="snap-start">
-                          <Image
-                            src={fav_food}
-                            alt="Favorite Food"
-                          />
-                        </div>
-                    </div>
-                  </div>
+
+          {/* Temp Section */}
+          <div className="">
+            <div className="lg:mx-auto mb-12 lg:m-0 lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:grid-flow-col-dense lg:gap-24">
+              <div className="lg:mt-0 lg:col-start-1 lg:col-span-2">
+                <div className="pr-4 -ml-48 sm:pr-6 md:-ml-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
+                  <Image
+                    src={food_features}
+                    alt="Augusteats Logo and Icon"
+                    // className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
+                  />
                 </div>
               </div>
-              <div className="mt-12 lg:m-0 lg:col-span-2 lg:pl-8">
-                <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:px-0 lg:py-20 lg:max-w-none">
-                  <blockquote>
-                    <div>
-                      <svg
-                        className="h-12 w-12 text-white opacity-25"
-                        fill="currentColor"
-                        viewBox="0 0 32 32"
-                        aria-hidden="true"
-                      >
-                        <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
-                      </svg>
-                      <p className="mt-6 text-2xl font-medium text-white">
-                        Having an allergy to soy and dairy makes eating out almost impossible. With Augusteats,
-                        I now can quickly find tasty food and trust that the food I order out meets my constaints.
+              <div className="px-4 mt-12 sm:mb-12  max-w-xl mx-auto sm:px-6 lg:py-32 lg:max-w-none lg:mx-0 lg:px-0 lg:col-start-3">
+                <blockquote>
+                  <div>
+                    <svg
+                          className="h-12 w-12 text-orange-500 opacity-25"
+                          fill="currentColor"
+                          viewBox="0 0 32 32"
+                          aria-hidden="true"
+                        >
+                          <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+                        </svg>
+                    <div className="mt-6">
+
+                      <p className="mt-6 text-2xl font-medium text-gray-500">
+                        Having a soy and dairy allergy makes eating out almost impossible. With Augusteats,
+                          I now can quickly find tasty food and trust that the food I order out meets my constaints.
                       </p>
                     </div>
                     <footer className="mt-6">
-                      <p className="text-base font-medium text-white">Mr. Josiah</p>
-                      <p className="text-base font-medium text-orange-500">CEO at Baby & King</p>
-                    </footer>
-                  </blockquote>
-                </div>
+                        <p className="text-base font-medium text-gray-500">Mr. Josiah</p>
+                        <p className="text-base font-medium text-orange-500">CEO at Baby & King</p>
+                      </footer>
+                  </div>
+                </blockquote>
               </div>
+
             </div>
           </div>
+
 
           {/* Blog section */}
           <div className="relative bg-gray-50 py-14 sm:py-24 lg:py-32">
@@ -343,7 +328,14 @@ export default function LandingPage() {
                 {howTo.map((post) => (
                   <div key={post.id} className="flex flex-col rounded-lg shadow-lg overflow-hidden">
                     <div className="flex-shrink-0">
-                      <img className="h-48 w-full object-cover" src={post.imageUrl} alt="" />
+                      <Image
+                        src={post.imageUrl}
+                        alt="Augusteats Logo and Icon"
+                        className="h-48 w-full object-cover"
+                        width={2250}
+                        height={1390}
+                        layout="responsive"
+                      />
                     </div>
                     <div className="flex-1 bg-white p-6 flex flex-col justify-between">
                       <div className="flex-1">
