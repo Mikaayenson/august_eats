@@ -21,7 +21,7 @@ import {
 const navigation = [
   { name: 'Overview', href: '#' },
   { name: 'Allergens', href: '#' },
-  { name: 'Nutition', href: '#' },
+  { name: 'Nutrition', href: '#' },
 ]
 const features = [
   {
@@ -69,7 +69,7 @@ const howTo = [
   },
   {
     id: 2,
-    title: '2. Filter by Nutition',
+    title: '2. Filter by Nutrition',
     href: '#',
     category: { name: 'Consider Dietary Restrictions', href: '#' },
     imageUrl:
