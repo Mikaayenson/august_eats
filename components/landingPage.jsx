@@ -118,12 +118,12 @@ export default function LandingPage() {
                   </div>
                 </div>
                 <div className="hidden space-x-8 md:flex md:ml-10">
-                  <a
-                      href='#'
-                      className="text-base font-medium text-white hover:text-gray-300"
-                    >
-                      <span className="text-orange-500">August</span>eats
+                    <a href="#" className="text-base font-medium text-white hover:text-gray-300">
+                      <span className="text-orange-500 hover:text-orange-400">
+                        August<span className="text-white hover:text-gray-300">eats</span>
+                      </span>
                     </a>
+
                   {navigation.map((item) => (
                     <a
                       key={item.name}
@@ -138,7 +138,7 @@ export default function LandingPage() {
               <div className="hidden md:flex md:items-center md:space-x-6">
                 <a
                   href="#"
-                  className="inline-flex items-center px-4 py-2 border-solid border-2 border-orange-500 text-base font-medium rounded-md text-gray-300 bg-gray-900 hover:bg-gray-300 hover:text-gray-900"
+                  className="inline-flex items-center px-4 py-2 border-solid border-2 border-orange-500 text-base font-medium rounded-md text-gray-300 bg-gray-900 hover:border-gray-300 hover:bg-orange-500 hover:text-gray-900"
                 >
                   Coming Soon
                 </a>
